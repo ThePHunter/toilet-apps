@@ -1,83 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
 
-body {
+* {
     margin: 0;
-    height: 300vh;
-    background:#ffffff;
-    display: flex;
-    justify-content: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-shadow: 1px 1px 5px black;
-}
-
-.header,
-.header-links-container{
-    background: #420264;
-}
-.header{
-    height: 150px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.header-links-container{
-    height:150px;
-    display: flex;
-    margin-left: auto;
-    margin-right: 5%;
-    justify-content: center;
-    align-items: center;
     padding: 0;
-    width: auto;
+    box-sizing: border-box;
 }
 
-.header-links{
-    margin-left: 30px;
-}
-
-.header-text-container{
+body {
+    min-height: 150vh;
+    background: #fff  ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-items: center;
-}
-
-.header-text{
-    white-space: nowrap;
-    display: flex;
-    color: #ffffff;
-    margin: 0;
-}
-
-.decoration-line{
-    background: #ffffff;
-    width:  734px ;
-    height: 3px;
-}
-
-.logo{
-    display: flex;
-}
-
-button{
-    background: #420264;
-    color: #ffffff;
-    border: #ffffff;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    background: #420264;
-    height: 20px;
-    padding: 20px;
-    border: #ffffff;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 5%;
-    white-space: nowrap;
-    box-shadow: 1px 1px 2px black;
-    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 ul{
@@ -87,3 +23,171 @@ ul{
 a{
     text-decoration: none;
 }
+
+:root{
+    /* My colours used throughout */
+    --main-dark: #393E46 ;
+    --secondary-dark: #EEEEEE;
+    --highlighter: #00ADB5;
+}
+
+.header{
+    height: 175px;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    background: var(--main-dark);
+}
+
+/* Countains all three buttons */
+.header-buttons-container{
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+
+.header-text{
+    white-space: nowrap;
+    font-size: 1.55em;
+    border-bottom: 1px solid white;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black ;
+}
+
+.logo{
+    display: flex;
+    max-width: 150px;
+}
+
+
+button{
+    background: var(--main-dark);
+    color: #ffffff;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    height: 20px;
+    padding: 20px;
+    border: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px 2px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-dark);
+    padding: 3%;
+    flex: 1;
+}
+
+/* Text appearing above the pictures */
+
+.pics-text{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: black;
+}
+
+.picture-slots-container{
+    display: flex;
+    margin: 5% ;
+    width: 670px;
+    justify-content: center;
+}
+
+/* For setting the parameters of the box containing the picture and text below pictures*/
+.picture-slot{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 1%;
+    color: gray;
+}
+
+/* For setting the paramaters of the picture itself */
+.picture-slot-img{
+    border-radius: 6px;
+    width: 162px;
+    height: 160px;
+    border: 3.5px solid var(--highlighter);
+    margin-bottom: 8%;
+}
+
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--secondary-dark);
+    width: 275%;
+    height: 300px;
+    padding-top: 30px;
+    font-size: 37px;
+    font-style: italic;
+}
+
+.quote-text1{
+    margin-right:10% ;
+    font-weight: 50;
+}
+
+.quote-text2{
+    margin-top: 1%;
+    margin-left: 15%;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.call-to-action-container{
+    display: flex;
+    align-items: center;
+    width: 150%;
+    height: 5%;
+    margin-top:15%;
+    padding: 7%;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background: #04ffe2 ;
+    color: 000;
+}
+
+.call-to-action-text{
+    white-space: nowrap;
+}
+
+.action-button{
+    background: #ffffff;
+    color: #002e29;
+    margin-left: auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-dark);
+    width: 100%;
+    height: auto;
+    flex: 1;
+    color: #ffffff;
+}
+
+
+
+

@@ -2,36 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>Toilet Apps</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="header">
-        <img style="max-width: 200px;" class="logo" src="../toilet-apps/img/logowhite.png" alt="">
-            <div class="header-text-container">
-            <h1 class="header-text">The Number #1 Apps For When You Go Number #2</h1>
-            <div class="decoration-line"></div>
-        </div>
-        
-        <ul class="header-links-container">
-            <li class="header-links"><a  href="#apps"> <button> Apps</button></a></li>
-            <li class="header-links"> <a  href="#games"><button>Games</button></a></li>
-            <li class="header-links"><a  href="#shareapps"><button> Share a toilet app</button></a></li>
+        <img  class="logo"src="../toilet-apps/img/logowhite.png">
+        <h1 class="header-text">The Number #1 Apps For When You Go Number #2</h1>
+        <!-- Buttons to navigate the page -->
+        <ul class="header-buttons-container">
+            <li><a  href="#apps"> <button>Apps</button></a></li>
+            <li><a  href="#games"><button>Games</button></a></li>
+            <li><a  href="#shareapps"><button> Share a toilet app</button></a></li>
         </ul>
-
     </div>
-
-
-    <div class="content">
+    <div class="content-container">
+        <!-- the text appearing above the four pictures -->
+        <h2 class="pics-text">Try these for your toilet time.</h2>
+        <!-- 4 pictures, TODO: each picture links to another page (example: apps picture takes you to the apps page) -->
+     <ul class="picture-slots-container">
+         <li class="picture-slot"><img class="picture-slot-img"src="../toilet-apps/img/ToiletApps.jpg">Helpful toilet apps for health managment</li>
+         <li class="picture-slot"><img class="picture-slot-img"src="../toilet-apps/img/ToiletGames.jpg">Fun toilet games to pass the time</li>
+         <li class="picture-slot"><img class="picture-slot-img"src="../toilet-apps/img/Guilleromo.jpg">Guillermo.</li>
+         <li class="picture-slot"><img class="picture-slot-img"src="../toilet-apps/img/nobody-ever-helps-me-in-this-house.jpeg">Nobody ever helps me in this house</li>
+     </ul>
+     <div class="quote-container">
+         <!--it has been asigned as text1 to give it an offset independant of the next line-->
+         <p class="quote-text1">Guillermo scares me......</p>
+         <p>What's behind those eyes..?</p>
+         <!--this is asigned as text2 to give it different properties independant from the previous two lines as this line is the "quote by"-->
+        <p class="quote-text2">-A Satisfied User</p>
+     </div>
+     <div class="call-to-action-container">
+         <div class="call-to-action-text"> 
+             <h2>Know a good toilet app?</h2>
+             <p>Send us your finds, if they are indeed any good, we'll add them!</p>
+         </div>
+         <button class="action-button">Share a toilet app</button>
+     </div>
     </div>
-    
-
     <div class="footer">
-
+        <p>Copyright © The Odin Project 2021 in conjunction with Toilet Apps</p>
     </div>
-
 </body>
 </html>
